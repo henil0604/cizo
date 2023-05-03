@@ -1,4 +1,4 @@
-import axios, { type AxiosInstance, type AxiosResponse } from "axios";
+import axios, { type AxiosInstance } from "axios";
 
 type Methods = "GET" | "POST" | "PUT" | "DELETE" | "HEAD" | "PATCH";
 
