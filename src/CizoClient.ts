@@ -2,7 +2,7 @@ import axios, { type AxiosInstance } from "axios";
 
 type Methods = "GET" | "POST" | "PUT" | "DELETE" | "HEAD" | "PATCH";
 
-interface CizuClientOptions {
+interface CizoClientOptions {
     host: string;
     endpoint: string;
 }
@@ -29,15 +29,15 @@ interface QueryOptions {
     other: any;
 }
 
-class CizuClient {
-    options: CizuClientOptions;
+class CizoClient {
+    options: CizoClientOptions;
     server: AxiosInstance;
     schema?: Schema;
 
-    public constructor(options?: Partial<CizuClientOptions>) {
+    public constructor(options?: Partial<CizoClientOptions>) {
         this.options = {
             host: "http://localhost:3000",
-            endpoint: "/_cizu-schema",
+            endpoint: "/_cizo-schema",
             ...options,
         };
 
@@ -162,4 +162,4 @@ class CizuClient {
     }
 }
 
-export default CizuClient;
+export default CizoClient;

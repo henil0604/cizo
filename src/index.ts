@@ -1,3 +1,3 @@
-import CizuClient from "@/CizuClient";
+import CizoClient from "@/CizoClient";
 
-export default CizuClient;
+export default CizoClient;

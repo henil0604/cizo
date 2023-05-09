@@ -1,7 +1,7 @@
-<h1 align="center">Welcome to Cizu 👋</h1>
+<h1 align="center">Welcome to Cizo 👋</h1>
 <p>
-  <a href="https://www.npmjs.com/package/cizu" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/cizu.svg">
+  <a href="https://www.npmjs.com/package/cizo" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/cizo.svg">
   </a>
   <a href="#" target="_blank">
     <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
@@ -13,23 +13,23 @@
 
 > REST API Integration made easy
 
-### 🏠 [Homepage](https://github.com/henil0604/cizu#readme)
+### 🏠 [Homepage](https://github.com/henil0604/cizo#readme)
 
 ## Install
 
 ```sh
-npm install cizu
+npm install cizo
 ```
 
 ## Ideology
 
-This library aims to simplify how client side applications interects with backend REST APIs. Cizu uses object oriented approach to interect with REST API.
+This library aims to simplify how client side applications interects with backend REST APIs. Cizo uses object oriented approach to interect with REST API.
 
 ## Quick Start
 
 > server-side
 
-On the Server side you will have to open a public end-point at `/_cizu-schema` (however, you can custumize this on client-side). This open endpoint should send JSON Schema something like this: 
+On the Server side you will have to open a public end-point at `/_cizo-schema` (however, you can custumize this on client-side). This open endpoint should send JSON Schema something like this: 
 
 ```json
 {
@@ -51,17 +51,17 @@ On the Server side you will have to open a public end-point at `/_cizu-schema` (
 
 > client-side
 ```js
-import CizuClient from 'cizu';
+import CizoClient from 'cizo';
 
-const cizu = new CizuClient({
+const cizo = new CizoClient({
     host: 'http://localhost:3000', // default
-    endpoint: '/_cizu-schema' // default
+    endpoint: '/_cizo-schema' // default
 })
 
-await cizu.init() // this is required to fetch schema
+await cizo.init() // this is required to fetch schema
 
 // Performing a query
-cizu.get('HelloWorld').then(console.log).catch((error)=>{
+cizo.get('HelloWorld').then(console.log).catch((error)=>{
     console.error("Error", error)
 })
 
